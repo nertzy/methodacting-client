@@ -1,4 +1,29 @@
-MethodActingClient
-==================
+Method Acting Client
+====================
 
-Description goes here
+http://code.google.com/p/methodacting-client/
+
+Method Acting Client is a Rails plugin that adds client functionality to a Rails app, giving it transparent access to the web service provided by a Method Acting entity-based social network service.
+
+More information on Method Acting is available at http://code.google.com/p/methodacting/
+
+
+Dependencies
+============
+
+Method Acting Client requires ActiveResource, which as of now is an unofficial part of Edge Rails. To install ActiveResource, first freeze your project to Edge Rails. Type from your Rails root:
+
+$ rake rails:freeze:edge
+
+Then you must check out ActiveResource manually. From your Rails root type:
+
+$ svn co http://svn.rubyonrails.org/rails/trunk/activeresource/ vendor/rails/activeresource
+
+You will now have access to the models hosted by the Method Acting service.
+
+Models
+======
+
+MethodActing::Actor
+MethodActing::Connection
+MethodActing::User
