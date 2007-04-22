@@ -1,4 +1,5 @@
-require 'active_resource'
+require 'activesupport/lib/active_support'
+require 'activeresource/lib/active_resource'
 
 # Load plugin models
 require 'method_acting_client/lib/method_acting_resource'
